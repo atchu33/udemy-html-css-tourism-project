@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="css/Styles.css" rel="stylesheet">
+
+    <style>
+        .photo-gallery {
+            width: 95%;
+            border: 1px solid #757575;
+            padding: 10px;
+            margin: auto;
+            margin-top: 30px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo {
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.5s;
+            width: 250px;
+            height: 180px;
+            background-size: cover;
+        }
+
+        #photo1 {
+            background-image: url("images/cathedral.jpg");
+        }
+
+        #photo2 {
+            background-image: url("images/kanchipuram.jpg");
+        }
+
+        #photo3 {
+            background-image: url("images/mamallapuram.jpg");
+        }
+        #photo4{
+            background-image: url("images/download.jpg");
+        }
+        .img-caption {
+            text-align: center;
+            margin-top: 120px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        .photo img {
+            border: 3px ridge #7c7b7b;
+            box-shadow: 0px 0px 2px 2px #7c7b7b;
+        }
+        .center{
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">India Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="states.html">States</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="capitals.html">Capitals</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <div class="photo-gallery">
+        <div class="photo" id="photo1">
+            <div class="img-caption">Cathedral Church</div>
+        </div>
+
+
+        <div class="photo" id="photo2">
+            <div class="img-caption">Kanchipuram</div>
+        </div>
+
+        <div class="photo" id="photo3">
+            <div class="img-caption">Mamallapuram</div>
+        </div>
+        <div class="photo" id="photo4">
+            <div class="img-caption">Marina Beach</div>
+        </div>
+    </div>
+
+    <div class="center">
+        <h1>Feel the song while travel</h1>
+        <audio controls="controls">
+            <source src="files/The_Life_Of_Ram-MassTamilan.com.mp3">
+            <source src="files/The_Life_Of_Ram-MassTamilan.com.mp3">
+            Audio tag is not supported
+        </audio>
+        <div><a style="left: 50px;" href="https://www.jiosaavn.com/featured/travel-tamil/pddVDZB02v1uOxiEGmm6lQ__">For more songs...</a></div>
+    </div>
+
+    <div class="center">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/WhQapHmaYYE" title="JOURNEY TO VIETNAM | A Cinematic Travel Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</body>
+
+</html>
